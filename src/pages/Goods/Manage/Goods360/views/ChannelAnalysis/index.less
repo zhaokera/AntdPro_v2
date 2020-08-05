@@ -1,0 +1,28 @@
+@import '~@/utils/utils.less';
+
+.ChannelAnalysis {
+  .stretch {
+    align-items  : stretch;
+    margin-bottom: @dm-base-size*2;
+  }
+
+  .bgWhite {
+    background-color: #fff;
+    height          : 100%;
+    min-height      : 300px;
+
+    .LH48 {
+      height       : 48px;
+      border-bottom: 1px solid #E6E6ED;
+      padding      : 0 @dm-base-size;
+      color        : #3B3B53;
+      margin-bottom: @dm-base-size*2;
+    }
+  }
+
+  :global {
+    .ant-tag {
+      border-radius: 12px;
+    }
+  }
+}

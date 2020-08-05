@@ -1,0 +1,40 @@
+@import '~@/utils/utils.less';
+.ExcelDetail {
+  background-color: #fff;
+  padding: @dm-base-size*2;
+  .LH22 p {
+    line-height: 20px;
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+  .txt_error {
+    color: @dm-color-ff333d; // font-size: @dm-text-font-title
+  }
+  .pic {
+    width: 60px;
+    height: 60px;
+    display: block;
+    float: right
+  }
+  .edithover {
+    width: 100%;
+    min-height: 32px;
+    line-height: 32px;
+    .edit {
+      display: none;
+      margin-left: 8px;
+    }
+  }
+  .edithover:hover {
+    
+    .edit {
+      display: inline;
+      i{
+        display:inline-block!important;
+      }
+    }
+  }
+  .Mb0{
+    margin-bottom: 0!important;
+  }
+}

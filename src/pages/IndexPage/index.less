@@ -1,0 +1,577 @@
+@import '~@/utils/utils.less';
+
+.IndexPageBox{
+
+ .IndexPageBoxCon{
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+  .IndexPageBoxLeft {
+    width: calc(~"100% - 40px - 288px");
+    .DataView{
+      background: #fff;
+      padding: 22px 16px;
+      .DataViewCon {
+        margin-top: 22px;
+
+        :global {
+          .ant-statistic {
+            text-align: center;
+          }
+          .ant-statistic-title{
+            font-size: 12px;
+          }
+          .ant-statistic-content{
+            font-size: 16px;
+            margin-top: 8px;
+          }
+          .ant-tabs-tab{
+            font-weight: normal!important;
+            width:210px;
+          }
+          .ant-tabs-nav .ant-tabs-tab-active{
+           color:unset!important;
+          }
+          .ant-tabs-ink-bar{
+            background-color:unset!important;
+          }
+          .ant-tabs-bar{
+            border-bottom: none;
+          }
+          .ant-tabs-nav .ant-tabs-tab:hover{
+            color: unset!important;
+          }
+        }
+
+        .compareNum {
+          text-align: center;
+          span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+              margin-left: 5px;
+            }
+          }
+        }
+
+        .compareNum:before {
+          width: 72px;
+          height: 1px;
+          content: "";
+          border-top: 1px dashed #ececf1;
+          color: @dm-color-3c3b57;
+          display: block;
+          margin: 10px auto;
+        }
+      }
+    }
+
+    .CommonFun{
+      background: #fff;
+      padding: 22px 16px;
+      .CommonFunCon{
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+        :global {
+          .ant-tabs-tab {
+            font-weight: normal !important;
+            width: 110px;
+          }
+
+          .ant-tabs-nav .ant-tabs-tab-active {
+            color: unset !important;
+          }
+
+          .ant-tabs-ink-bar {
+            background-color: unset !important;
+          }
+
+          .ant-tabs-bar {
+            border-bottom: none;
+          }
+
+          .ant-tabs-nav .ant-tabs-tab:hover {
+            color: unset !important;
+          }
+        }
+        .comFunList{
+          text-align:center;
+          margin: 0 3.3%;
+          .ComIcon{
+            width: 56px;
+            height: 56px;
+            display: block;
+            margin: 0 auto 12px;
+          }
+          .Comspan{
+            color: @dm-color-3c3b57;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .marketAct{
+       background: #fff;
+       padding: 22px 16px;
+       .marketActCon{
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+         flex-wrap: wrap;
+         a{
+          width: calc(~"34.4% - 16px");
+          display: block;
+         }
+         .marketActConList{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background: @dm-color-f9fafb;
+            padding: 12px 18px;
+            margin:0 @dm-base-size*2 @dm-base-size*2 0;
+            .marketIcon{
+              display: block;
+              width: 56px;
+              height: 56px;
+              margin-right: @dm-base-size*2;
+            }
+            .marketRight {
+              width: calc(~"100% - 56px - 16px");
+              span{
+                display: block;
+                text-align: left;
+                color:@dm-color-3c3b57;
+                font-size: 12px;
+                margin-bottom: @dm-base-size;
+              }
+              i{
+                font-style: normal;
+                font-size: 12px;
+                color: @dm-color-9495a4;
+              }
+            }
+         }
+       }
+    }
+
+    .AllCharts{
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      .NewMember{
+         background: #fff;
+         padding: 22px 16px;
+         height:280px;
+         width: calc(~"33.8% - 16px");
+      }
+    }
+
+  }
+  .RightTab{
+
+    :global{
+      .ant-radio-button-wrapper span{
+        font-weight: normal !important;
+      }
+      .ant-radio-button-wrapper:first-child{
+        border: none;
+      }
+      .ant-radio-button-wrapper{
+        border:none;
+        padding: 0 @dm-base-size;
+      }
+      .ant-radio-button-wrapper:not(:first-child)::before{
+        background-color:unset;
+      }
+      .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before{
+        background-color:unset!important;
+        opacity: 0;
+      }
+      .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):active{
+        box-shadow: none!important;
+      }
+      .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+        box-shadow: none !important;
+      }
+      .ant-radio-button-wrapper-checked span{
+        color: @dm-color-nav;
+      }
+      .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within{
+        outline:unset!important;
+      }
+    }
+  }
+
+  .storePM{
+    .storeItem{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: @dm-base-size*2;
+      .storeItemLeft{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        i{
+          width: 16px;
+          height: 16px;
+          display: block;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 16px;
+          color: @dm-color-3b3b53;
+          font-size: 12px;
+          font-style: normal;
+          margin-right: @dm-base-size*2;
+          background-color: #e6e6ed;
+        }
+        .topNum{
+          background: #767682;
+          color: #fff;
+        }
+        span{
+          display: block;
+        }
+      }
+      .storeItemRight{
+        color: @dm-color-686b7b;
+        font-size: 12px;
+      }
+    }
+    .storeItem:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .IndexPageBoxRight {
+    width:288px;
+    .wxHaveData{
+      width: 100%;
+      background: #fff;
+      padding: 22px 16px;
+      .wxHaveDataCon{
+        .wxItem{
+          display: flex;
+          align-items: flex-start;
+          justify-content:flex-start;
+          margin-bottom: @dm-base-size*2;
+          .wxleft{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            height: 30px;
+            line-height: 30px;
+            background: #fafafa;
+            width: 208px;
+            position: relative;
+            .littlebox{
+              height: 30px;
+              line-height: 30px;
+              background: #fafafa;
+            }
+            .bighover{
+              cursor: pointer;
+            }
+            .bigImg{
+              position: absolute;
+              width: 100px;
+              height: 100px;
+              top: -102px;
+              right: 0;
+              display: none;
+              z-index: 2;
+              border: 1px solid #eee;
+              cursor: pointer;
+              box-shadow: 1px 0 15px #e6e6e6;
+            }
+            .bighover:hover+.bigImg {
+              display: block;
+            }
+          }
+          .littleImg{
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .wxItem:last-child{
+          margin-bottom: 0
+        }
+        .addMore{
+          text-align: left;
+          margin-top: @dm-base-size*2;
+          display: block;
+          margin-left: 10px;
+        }
+      }
+    }
+    .wxNoData{
+      width: 100%;
+      background: #fff;
+      padding: 22px 0 25px;
+      .wxImgBox{
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+      }
+      .wxText{
+        width: 258px;
+        height: 32px;
+        text-align: center;
+        color: @dm-color-686b7b;
+        font-size: 12px;
+        text-align: center;
+        background: #fafafa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:18px auto 22px;
+      }
+      .wxBtn{
+        text-align: center;
+        a{
+          margin: 0 25px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+ }
+ .kfCon{
+  .kfConList{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    .kficon{
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+    span{
+      display: block;
+      color: #3c3b57;
+      font-size: 12px;
+    }
+  }
+  .kfConList:last-child{
+    margin-bottom: 0;
+  }
+}
+ .H16{
+   width: 100%;
+   height: 16px;
+ }
+.appBox{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  padding: 20px 16px;
+  .appIcon{
+    width:48px;
+    height: 48px;
+    display: block;
+    margin-right: 15px;
+  }
+  .appText{
+    width: calc(~"100% - 63px");
+    span{
+      display: block;
+      font-size: 12px;
+      color: @dm-color-3c3b57;
+      margin-bottom:@dm-base-size;
+    }
+    i{
+      font-style: normal;
+      color: @dm-color-686b7b;
+      font-size: 12px;
+    }
+  }
+}
+.kfCenter{
+   padding: 22px 16px;
+   background: #fff;
+   .kfCon{
+     .kfConList{
+       display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       margin-bottom: @dm-base-size*2;
+       .kficon{
+         display: block;
+         width: 16px;
+         height: 16px;
+         margin-right: 8px;
+       }
+       span{
+         display: block;
+         color: @dm-color-3c3b57;
+         font-size: 12px;
+       }
+     }
+     .kfConList:last-child{
+       margin-bottom: 0;
+     }
+   }
+}
+
+.helpCenter {
+  padding: 22px 16px;
+  background: #fff;
+  .helpCon{
+
+    .helpConText{
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+    }
+     ul{
+       margin: 0;
+       margin-block-start:0;
+       padding-inline-start:0;
+       li{
+         display: block;
+         margin-bottom: @dm-base-size * 2;
+         position: relative;
+         margin-left: 0;
+         a{
+           color: @dm-color-686b7b;
+         }
+       }
+       li:last-child{
+         margin-bottom: 0
+       }
+     }
+     .newicon {
+       font-size: 12px;
+       color: #fff;
+       width: 30px;
+       height: 18px;
+       background: #ff0000;
+       border-radius: 3px;
+       display: inline-block;
+       text-align: center;
+       margin-left: 6px;
+     }
+  }
+
+}
+.ProDynamics{
+  padding: 22px 16px;
+  background: #fff;
+  .ProCenter{
+     ul {
+       margin: 0;
+       margin-block-start: 0;
+       padding-inline-start: 0;
+
+       li {
+         display: block;
+         margin-bottom: @dm-base-size * 2;
+         position: relative;
+         margin-left: 0;
+
+         a {
+           color: @dm-color-686b7b;
+         }
+       }
+
+       li:last-child {
+         margin-bottom: 0
+       }
+     }
+
+     .newicon {
+       font-size: 12px;
+       color: #fff;
+       width: 30px;
+       height: 18px;
+       background: #ff0000;
+       border-radius: 3px;
+       display: inline-block;
+       text-align: center;
+       margin-left: 6px;
+     }
+  }
+}
+.littleBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:@dm-base-size * 2;
+  span{
+    font-size: 12px;
+    font-weight: bold;
+    color: @dm-color-3b3b53;
+    text-align: left;
+  }
+}
+
+}
+
+
+@media screen and (max-width: 1919px) {
+  .IndexPageBox{
+    .IndexPageBoxCon{
+      .IndexPageBoxLeft{
+        .marketAct{
+          .marketActCon{
+             a {
+               width: calc(~"50% - 16px");
+             }
+          }
+        }
+        .AllCharts{
+           flex-wrap: wrap;
+          .NewMember{
+            width: calc(~"50% - 8px");
+            margin-bottom: @dm-base-size*2;
+          }
+          .NewMember:nth-child(3){
+            width: calc(~"100%");
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .IndexPageBox {
+    .IndexPageBoxCon {
+      .IndexPageBoxLeft {
+        .marketAct {
+          .marketActCon {
+            a {
+              width: calc(~"100% - 16px");
+            }
+            .marketActConList{
+              margin: 0 0 16px 0;
+            }
+          }
+        }
+        .AllCharts {
+          flex-wrap: wrap;
+
+          .NewMember {
+            width: calc(~"100%");
+            margin-bottom: @dm-base-size*2;
+          }
+
+          .NewMember:nth-child(3) {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

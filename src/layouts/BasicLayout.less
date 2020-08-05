@@ -1,0 +1,80 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.content {
+  margin: 24px;
+  padding-top: 56px;
+}
+
+.contentView {
+  display: flex;
+}
+
+.rigthView {
+  // width: 100%;
+  width: calc(~'100% - 120px');
+}
+
+.rigthHomeView {
+  width: 100%;
+}
+
+.viceMenu {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  width: 120px;
+  min-height: 700px;
+  background-color: #f9fafb;
+  padding: 16px 8px 0 8px;
+}
+
+.menu {
+  width: 104px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.menuSelected {
+  width: 104px;
+  height: 40px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ecedee;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.unClickSpan {
+  color: @dm-color-3c3b57;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.menuMainSpan {
+  color: @dm-color-3c3b57;
+  font-size: 12px;
+}
+
+.selected {
+  width: 6px;
+  height: 10px;
+  margin-right: 11px;
+}
+
+.hide {
+  display: none;
+}
+
+.iframe {
+  display: none;
+}

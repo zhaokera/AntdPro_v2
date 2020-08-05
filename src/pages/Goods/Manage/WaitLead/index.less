@@ -1,0 +1,75 @@
+@import '~@/utils/utils.less';
+.WaitLead {
+  .LH32 {
+    line-height: @dm-base-size *3
+  }
+  .MB8 p {
+    margin-bottom: @dm-base-size
+  }
+  .MB16 {
+    margin-bottom: @dm-base-size*2
+  }
+  .bg {
+    background-color: #fff;
+    padding: @dm-base-size*2;
+  }
+  .goodsCol {
+    float: right;
+    width: calc(~'100% - 25px');
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .pic {
+      width: 45px;
+      height: 45px;
+      flex-shrink: 0;
+      margin-right: @dm-base-size;
+    }
+    .title {
+      flex: 1;
+      line-height: @dm-base-size*2;
+    }
+  }
+  :global {
+    .ant-table-row-level-1 {
+      .antd-pro-pages-goods-manage-wait-lead-index-goodsCol {
+        width: calc(~'100% - 45px');
+      }
+    }
+    .ant-table-row[class*='ant-table-row-level-1'] .ant-table-selection-column>span {
+      display: inline-block;
+    }
+  }
+}
+
+.logo_tags {
+  border-radius: 14px;
+}
+.iconCommon{
+  border-radius: 25px;
+  font-size: 12px;
+  font-style: normal;
+  padding: 2px 5px;
+  color: #fff;
+  margin-right: 5px;
+}
+.taobaoIcon{
+  background: @dm-color-tb;
+}
+.tmallIcon{
+background: @dm-color-tm;
+}
+.snIcon{
+background: @dm-color-sn;
+}
+.youzanIcon{
+background: @dm-color-yz;
+}
+.weimengIcon{
+background: @dm-color-wm;
+}
+.nocursor{
+cursor: not-allowed;
+}

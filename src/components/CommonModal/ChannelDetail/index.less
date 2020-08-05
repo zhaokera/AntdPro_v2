@@ -1,0 +1,89 @@
+ @import '~@/utils/utils.less';
+
+.BoxAll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconCommon{
+    border-radius: 25px;
+    font-size: 12px;
+    font-style: normal;
+    padding: 2px 5px;
+    color: #fff;
+    margin-right: 5px;
+}
+.taobaoIcon{
+    background: @dm-color-tb;
+}
+.tmallIcon{
+background: @dm-color-tm;
+}
+.snIcon{
+background: @dm-color-sn;
+}
+.youzanIcon{
+background: @dm-color-yz;
+}
+.weimengIcon{
+background: @dm-color-wm;
+}
+
+ .goodsCol {
+   float: right;
+   width: calc(~'100% - 25px');
+   .title {
+     flex: 1;
+     line-height: @dm-base-size*2;
+   }
+ }
+
+ .goodsCol:after {
+   content: "";
+   clear: both;
+ }
+  .codeSpan {
+    display: block;
+    text-align: left;
+  }
+
+  .codeSpanColor {
+    display: block;
+    text-align: left;
+    color: @dm-color-ff333d;
+  }
+
+:global {
+     .ant-table-row-level-1 {
+       .antd-pro-pages-goods-manage-goods-list-index-goodsCol {
+         width: calc(~'100% - 45px');
+       }
+     }
+
+     .ant-table-row[class*='ant-table-row-level-1'] .ant-table-selection-column>span {
+       display: inline-block;
+     }
+      .ant-table-row-level-1 {
+        .ant-table-row-expand-icon{
+          display: none;
+        }
+      }
+}
+
+.UnderLine{
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  td{
+        padding: 16px 16px;
+  }
+}
+.tableBox{
+    :global{
+      .ant-table-row:last-child{
+        td{
+          border-bottom: none;
+        }
+      }
+  }
+}

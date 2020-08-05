@@ -1,0 +1,35 @@
+@import '~@/utils/utils.less';
+
+.itemtext {
+  font-size: @dm-text-font;
+  color: @dm-color-9495a4;
+  display: block;
+  line-height: 20px;
+}
+
+.allLevelBox {
+  border: 1px dashed @dm-color-e6e6ed;
+  margin-top: @dm-base-size * 2;
+  padding: @dm-base-size * 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .lebelItem {
+    height: 32px;
+    line-height: 32px;
+    border-radius: @dm-base-size / 2;
+    padding: 0 @dm-base-size*2;
+    font-size: @dm-text-font;
+    background: @dm-color-e6e6ed;
+    color: @dm-color-686b7b;
+    margin: 0 @dm-base-size @dm-base-size 0;
+    cursor: pointer;
+  }
+
+  .lebelItem:hover,
+  .clickCur {
+    background: @dm-color-6f9efc;
+    color: #fff;
+  }
+}

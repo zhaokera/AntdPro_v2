@@ -1,0 +1,207 @@
+@import '~@/utils/utils.less';
+
+.GoodsInfo {
+  padding: @dm-base-size*2;
+  color: @dm-color-3b3b53;
+  background-color: #fff;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .mainImg {
+    width: 344px;
+    height: 344px;
+    border-radius: 4px;
+    margin-bottom: @dm-base-size*2;
+  }
+
+  .bannerImgBox {
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .P4 {
+    padding: 0 2px;
+
+    img {
+      border: 2px solid transparent;
+      border-radius: 2px;
+      width: 60px;
+      display: block;
+      height: 60px;
+    }
+  }
+
+  :global {
+    .ant-tabs-nav .ant-tabs-tab {
+      margin: 0;
+      padding: 0;
+    }
+
+    .ant-tabs-ink-bar {
+      background-color: transparent;
+    }
+
+    .ant-tabs-bar {
+      border-bottom: none;
+    }
+
+    .ant-tabs-tab-prev.ant-tabs-tab-arrow-show,
+    .ant-tabs-tab-next.ant-tabs-tab-arrow-show {
+      width: 12px;
+    }
+
+    .ant-tabs-nav-container-scrolling {
+      padding: 0 12px;
+    }
+
+    .ant-tabs-tab-active {
+      img {
+        border: 2px solid #9495A4 !important;
+      }
+    }
+
+    /* .ant-tabs-nav .ant-tabs-tab-active {
+      color: @dm-color-3b3b53;
+      border-top: 2px solid #3477FD;
+      background-color: #fff;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab:hover {
+      color: @dm-color-3b3b53;
+      border-top: 2px solid #3477FD;
+    }
+
+
+    .ant-tabs-nav-container-scrolling {
+      height: 98px;
+    } */
+  }
+
+  .LH44 {
+    line-height: 44px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-family: 'MicrosoftYaHei'
+  }
+
+  .priceWrapper {
+    background-color: @dm-color-f9fafb;
+    height: 65px;
+    margin-bottom: 24px;
+    padding: 0 8px;
+  }
+
+  .unitColor {
+    color: @dm-color-686b7b;
+  }
+
+  .priceColor {
+    color: #FF0036;
+    font-size: 14px;
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .colorWrapper {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    border-radius: 2px;
+    margin-bottom: 4px;
+  }
+
+  .LH32 {
+    line-height: 32px;
+  }
+
+  .sizeBox {
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 16px;
+    overflow: hidden;
+    border: 1px solid #C9C9D0;
+    border-radius: 4px;
+    margin-bottom: 4px;
+  }
+
+  .LeftContanier {
+    width: calc(~'100% - 376px');
+  }
+
+  .leftSize {
+    flex: 1;
+  }
+
+  .parameterHeader {
+    margin-top: @dm-base-size*6;
+    background-color: #F3F4F7;
+    border: 1px solid #C9C9D0;
+    height: 48px;
+    padding: 0 20px;
+    line-height: 48px;
+  }
+
+  .parameterCon {
+    padding: @dm-base-size*2 @dm-base-size*4;
+    line-height: 28px;
+    color: #686B78;
+    justify-content: space-around;
+  }
+
+  .w750 {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    overflow-x: auto;
+    img{
+      display: inline-block;
+      width: auto;
+      height: auto
+    }
+    &::-webkit-scrollbar-track-piece {
+      background-color: #f8f8f8;
+      -webkit-border-radius: 2em;
+      -moz-border-radius: 2em;
+      border-radius: 2em;
+    }
+    /*滚动条的宽度*/
+    &::-webkit-scrollbar {
+      height: 9px;
+    }
+    /*滚动条的设置*/
+    &::-webkit-scrollbar-thumb {
+      background-color: #dddddd;
+      background-clip: padding-box;
+      -webkit-border-radius: 2em;
+      -moz-border-radius: 2em;
+      border-radius: 2em;
+    }
+    /*滚动条鼠标移上去*/
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #bbb;
+    }
+  }
+  .w750:after{
+    content: '';
+    clear: both;
+    display: block;
+  }
+  
+}
+
+
+// :global {
+//   .center .slick-current img {
+//     border: 2px solid #9495A4 !important;
+//   }
+// }

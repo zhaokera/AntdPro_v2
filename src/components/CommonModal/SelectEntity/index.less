@@ -1,0 +1,75 @@
+@import '~@/utils/utils.less';
+.Mb0 {
+  margin-bottom: 0!important;
+}
+
+// padding: 0;
+.pic {
+  display: block;
+  width: 100%;
+  display: block;
+}
+
+.imgDiv {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+}
+
+.cell {
+  padding: @dm-base-size;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.active {
+  border-color: @dm-color-nav;
+  color: @dm-color-nav;
+  margin-bottom: @dm-base-size*2
+}
+
+.title {
+  text-align: center;
+  font-size: @dm-text-font;
+  height: 40px;
+}
+
+.txtWarning {
+  color: @dm-color-ff333d
+}
+
+.txtDefault {
+  color: @dm-color-67668a
+}
+
+.font12 {
+  font-size: @dm-text-font;
+  margin-top: @dm-base-size
+}
+.picImg{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fbfbfb;
+  margin: 0 auto;
+  overflow: hidden;
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+.EntiyBox{
+  margin-top:@dm-base-size*2;
+  margin-bottom: @dm-base-size*2;
+  :global{
+    .ant-col-4{
+      width: 20%;
+    }
+  }
+}

@@ -1,0 +1,211 @@
+@import '~@/utils/utils.less';
+
+.Manage {
+  .bg {
+    background-color: #fff;
+    padding: @dm-base-size*2;
+    margin-bottom: @dm-base-size*2;
+  }
+
+  .mb0 {
+    margin-bottom: 0 !important;
+  }
+
+  .w_auto {
+    width: calc(~'100% - 100px')
+  }
+
+  .FistCell {
+    .Left {
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      margin-right: 8px;
+      float: left;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .Right {
+      font-size: 14px;
+      width: 64%;
+      float: left;
+      display: inline-block;
+
+      .PicName {
+        width: 100%;
+        color: #1890ff;
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; //需要控制的文本行数
+        overflow: hidden;
+        height: 36px;
+        font-size: 12px;
+      }
+
+      .Spec {
+        width: 100%;
+        display: block;
+        color: #666;
+        font-size: 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .BuyerCell {
+    width: 250px;
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+
+    .BuyerSpan {
+      width: 100%;
+      margin-bottom: 5px;
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  .GetCashCell {
+    .GetCash {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 5px;
+
+      span {
+        color: #666;
+        margin-right: 5px;
+      }
+
+      font {
+        color: #999;
+      }
+
+      i {
+        color: #1890ff;
+        font-style: normal;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .Orderhead {
+    font-size: 12px;
+    display: inline-block;
+    width: calc(~"100% - 17px - 8px");
+    vertical-align: sub;
+
+    .Orderheadfl {
+      float: left;
+      color: #666;
+
+      span {
+        display: inline-block;
+        margin-right: 50px;
+      }
+
+      font {
+        display: inline-block;
+      }
+    }
+
+    .Orderheadfr {
+      float: right;
+
+      span {
+        display: inline-block;
+        color: #1890ff;
+        cursor: pointer;
+      }
+
+      i {
+        display: inline-block;
+        margin: 0 10px;
+        color: #999;
+      }
+    }
+  }
+
+  .OrderCell {
+    .OrderState1 {
+      font-size: 12px;
+      color: #339999;
+      display: block;
+      margin-bottom: 5px;
+      cursor: pointer;
+
+      i {
+        font-style: normal;
+        color: #1890ff;
+        cursor: pointer;
+      }
+    }
+
+    .OrderState2 {
+      font-size: 12px;
+      color: #1890ff;
+      display: block;
+      margin-bottom: 5px;
+      cursor: pointer;
+
+      i {
+        font-style: normal;
+        color: #1890ff;
+        cursor: pointer;
+      }
+    }
+
+    .OrderStateSize {
+      font-size: 12px !important;
+    }
+  }
+
+  .iconCommon {
+    border-radius: 25px;
+    font-size: 12px;
+    font-style: normal;
+    padding: 2px 5px;
+    color: #fff;
+    margin-right: 5px;
+  }
+
+  .taobaoIcon {
+    background: @dm-color-tb;
+  }
+
+  .tmallIcon {
+    background: @dm-color-tm;
+  }
+
+  .snIcon {
+    background: @dm-color-sn;
+  }
+
+  .youzanIcon {
+    background: @dm-color-yz;
+  }
+
+  .weimengIcon {
+    background: @dm-color-wm;
+  }
+
+
+  :global {
+    .ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row)>td,
+    .ant-table-tbody>tr:hover:not(.ant-table-expanded-row)>td,
+    .ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row)>td,
+    .ant-table-thead>tr:hover:not(.ant-table-expanded-row)>td {
+      background: #fff;
+    }
+  }
+}

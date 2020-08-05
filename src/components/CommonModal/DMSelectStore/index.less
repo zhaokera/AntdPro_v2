@@ -1,0 +1,81 @@
+@import '~@/utils/utils.less';
+
+.headInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .search {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    >* {
+      margin-left: 16px
+    }
+  }
+}
+
+.groupName {
+  display: flex;
+
+  ul,
+  li {
+    margin: 0;
+    padding: 0
+  }
+
+  .groupList {
+    height: 100%;
+    border: none;
+    width: 223px;
+    background-color: #f9fafb;
+    padding: 16px 0;
+
+    ul {
+      padding: 0 16px;
+      height: 490px;
+      // max-height: 1000px;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+
+    li {
+      margin: 0 0 4px;
+      border: none;
+      background-color: #EDEEEE;
+      display: block;
+      text-align: center;
+      position: relative;
+      color: #686b78;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 4px;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #e5edfd;
+    }
+  }
+}
+
+.selectList {
+  display: flex;
+  align-items: baseline;
+  margin-top: 16px;
+
+  .itemSelect {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid @dm-color-e6e6ed;
+    padding: 0 8px;
+    margin-right: 8px;
+    margin-bottom: 8px
+  }
+}

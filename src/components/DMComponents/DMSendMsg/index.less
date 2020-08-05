@@ -1,0 +1,279 @@
+@import '~@/utils/utils.less';
+.labelNum {
+  display: inline-block;
+  width: 36px;
+}
+
+.EditNewsPageAll {
+  .topNotice {
+    margin-bottom: 16px;
+    .noticeList {
+      height: 22px;
+      line-height: 22px;
+      text-align: left;
+      color: #1170bc;
+      .next-notice.next-notice-medium .next-notice-symbol {
+        margin-top: 4px;
+      }
+      span {
+        color: #ec4137;
+      }
+    }
+  }
+}
+
+.editPageLeft {
+  .editCon {
+    .upload {
+      font-style: normal;
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      margin-left: 15px;
+      vertical-align: super;
+      background: url('http://cdn.hzmengpai.com/web/img/add-icon.png') no-repeat;
+    }
+    .newsNote {
+      color: #3477FD;
+      font-size: 12px;
+    }
+  }
+  .editConCur {
+    .editConCurTop {
+      border: 1px solid #ccccca;
+      border-bottom: none;
+      .signTitle {
+        height: 32px;
+        border-bottom: 1px solid #ccccca;
+        display: flex;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        align-items: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        .signTitleLeft {
+          margin-left: 10px;
+          span {
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 12px;
+          }
+        }
+        .signTitleList {
+          margin-right: 12px;
+          font-size: 12px;
+          position: relative;
+          padding-left: 16px;
+          cursor: pointer;
+          display: inline-block;
+        }
+        .signTitleList1:before {
+          content: '';
+          width: 14px;
+          height: 14px;
+          background: url('http://wevip.image.alimmdn.com/qqd/xzmb0.png') no-repeat;
+          background-size: 100%;
+          display: block;
+          position: absolute;
+          top: 12px;
+          left: 0;
+        }
+      }
+      .signCon {
+        height: 168px;
+        position: relative;
+        .next-input.next-input-multiple textarea {
+          padding: 8px 8px;
+          height: 140px;
+        }
+        .shortNewCon {
+          height: 120px;
+          .moreInputBox {
+            display: block;
+            height: 146px;
+            width: 100%;
+            border: none;
+            word-break: break-all;
+          }
+          :global {
+            .ant-input:focus {
+              box-shadow: unset;
+            }
+          }
+        }
+        .Unsubscribe {
+          position: absolute;
+          bottom: -4px;
+          right: -1px;
+        }
+      }
+    }
+    .editConCurBottom {
+      border: 1px dashed #ccccca;
+      height: 32px;
+      line-height: 32px;
+      background: #f7f8fa;
+      padding-left: 10px;
+      color: #666;
+      font-size: 12px;
+      i {
+        font-style: normal;
+        color: #3089dd;
+        display: inline-block;
+      }
+      .ml10 {
+        margin-left: 10px;
+      }
+    }
+  }
+  .w160 {
+    width: 160px;
+  }
+  .w292 {
+    width: 292px;
+  }
+  .ml10 {
+    margin-left: 10px;
+  }
+  .mr10 {
+    margin-right: 10px;
+  }
+}
+
+.editPageRight {
+  margin: -12px 0 0 16px; // width: 240px;
+  height: 245px;
+  background: url('http://cdn.hzmengpai.com/web/img/phone-bg.png') no-repeat;
+  background-size: 100% 100%;
+  .editnewscontainer {
+    padding: 67px 23px 0 14px;
+    height: 225px;
+    overflow: hidden;
+    .editconlist {
+      color: #666;
+      font-size: 12px;
+      padding: 8px;
+      background: #e4f0fd;
+      border-radius: 10px;
+      line-height: 20px;
+      margin: 4px 0 12px 10px;
+      word-break: normal;
+      text-align: left;
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+}
+
+.balloontipBox {
+  .balloontip {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+.topBox {
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  margin-bottom: 16px;
+  label {
+    text-align: left;
+    height: 26px;
+    line-height: 26px;
+  }
+  .topBoxInput {
+    .InputClsName {
+      width: 400px;
+      margin-right: 16px;
+    }
+    .BoxInputTips {
+      font-size: 12px;
+      color: #999;
+      display: block;
+      margin-top: 8px;
+    }
+  }
+}
+
+.useBtn {
+  color: #3399ff !important;
+}
+
+.mr16 {
+  margin-right: 16px !important;
+}
+
+.shortnewsbox {
+  span {
+    color: #ff3300;
+  }
+}
+
+.pageBox {
+  text-align: right;
+  margin-top: 16px;
+  margin-right: 8px;
+}
+
+.seachFrom {
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  margin: 16px 0;
+  .seachFromList {
+    margin-right: 16px;
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    label {
+      display: inline-block;
+      width: 72px;
+      text-align: right;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+.inputWidthBox {
+  width: 150px;
+}
+
+.inputWidthBox2 {
+  width: 200px;
+}
+
+.MB10 {
+  margin-bottom: 10px;
+}

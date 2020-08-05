@@ -1,0 +1,24 @@
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .boxItem {
+        display: flex;
+        align-items: center;
+        width: 276px;
+        margin-right: 5px;
+        .attTit {
+            display: inline-block;
+            min-width: 50px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+        a {
+            min-width:40px;
+            display: block;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+}

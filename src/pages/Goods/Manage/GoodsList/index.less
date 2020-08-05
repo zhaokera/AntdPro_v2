@@ -1,0 +1,138 @@
+@import '~@/utils/utils.less';
+
+.marketPageAll {
+  background: #fff;
+  padding: @dm-base-size * 2;
+}
+
+.midspan {
+  display: inline-block;
+  margin: 0 10px;
+  color: #ccc;
+}
+.formitemBox{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.InputBoxWidth{
+  width: calc(~"50% - 14px");
+  margin-bottom: 0!important;
+}
+.midBoxCon{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  .midBoxRight{
+    i{
+      font-style: normal;
+      margin: 0 @dm-base-size;
+      span{
+        font-size: 16px;
+        color: @dm-color-ff333d;
+        font-weight: bold;
+        margin-left: @dm-base-size;
+      }
+    }
+
+  }
+}
+.H16{
+  width: 100%;
+  height: @dm-base-size*2;
+}
+
+ .goodsCol {
+   float: right;
+   width: calc(~'100% - 25px');
+
+   img {
+     display: block;
+     width: 100%;
+     height: 100%;
+   }
+
+
+
+   .title {
+     flex: 1;
+     line-height: @dm-base-size*2;
+   }
+ }
+ .goodsCol:after{
+   content: "";
+   clear: both;
+ }
+  :global {
+    .ant-table-row-level-1 {
+      .antd-pro-pages-goods-manage-goods-list-index-goodsCol {
+        width: calc(~'100% - 45px');
+      }
+    }
+
+    .ant-table-row[class*='ant-table-row-level-1'] .ant-table-selection-column>span {
+      display: inline-block;
+    }
+  }
+
+  .codeSpan{
+    display: block;
+    text-align: left;
+  }
+  .codeSpanColor{
+    color: @dm-color-ff333d;
+  }
+   .pic {
+     width: 45px;
+     height: 45px;
+     flex-shrink: 0;
+     margin-right: @dm-base-size;
+     display: inline-block;
+   }
+   .channelBox{
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-start;
+     i{
+      padding: 2px 10px;
+      background:@dm-color-e6e6ed;
+      border:1px solid @dm-color-9495a4;
+      color: #777;
+      font-size: @dm-text-font;
+      border-radius: 25px;
+      margin: 0 @dm-base-size 0 0;
+      display: inline-block;
+      font-style: normal;
+     }
+     i:after{
+       content: "";
+       clear: both;
+       display: block;
+       width: 100%;
+     }
+   }
+
+   .operateBox{
+     a{
+       margin-right: @dm-base-size*2;
+     }
+     a:last-child{
+       margin-right: 0;
+     }
+   }
+
+   .linkColor {
+     color: @dm-color-3477fb;
+   }
+   .Edit{
+     margin-left: @dm-base-size;
+     cursor: pointer;
+   }
+
+:global{
+  .ant-table-row-level-1 {
+    .anticon-edit {
+      display: none;
+    }
+  }
+}

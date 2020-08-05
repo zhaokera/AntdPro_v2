@@ -1,0 +1,36 @@
+@import '~@/utils/utils.less';
+.Released {
+  .bg {
+    background-color: #fff;
+    margin-bottom: @dm-base-size*2;
+    padding: @dm-base-size*2;
+  }
+  .page_title_s {
+    font-size: @dm-text-font;
+    color: @dm-color-3c3b57;
+    margin-bottom: @dm-base-size;
+  }
+  .title_hint {
+    font-size: @dm-text-font;
+    color: @dm-color-686b7b;
+    margin-bottom: @dm-base-size*3;
+  }
+  .card_item {
+    border-style: dashed;
+    height: 200px;
+    >div {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  :global {
+    .ant-btn-primary {
+      background-color: @dm-color-e5edfd;
+      color: @dm-color-3477fb;
+      margin-top: @dm-base-size*2
+    }
+  }
+}

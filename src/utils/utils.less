@@ -1,0 +1,103 @@
+@import '~antd/lib/style/themes/default.less';
+
+// 全局颜色规范
+@dm-color-3477fb: #3477fd;
+@dm-color-5674fe: #5674fe;
+@dm-color-6f9efc: #6f9efc;
+@dm-color-fdc235: #fdc235;
+@dm-color-ff333d: #ff333d;
+@dm-color-3c3b57: #3B3B53;
+@dm-color-67668a: #67668a;
+@dm-color-9495a4: #9495a4;
+@dm-color-e6e6ed: #e6e6ed;
+@dm-color-f3f4f5: #f3f4f5;
+@dm-color-5ac697: #5ac697;
+@dm-color-e5edfd: #e5edfd;
+@dm-color-686b7b: #686b78;
+@dm-color-f3f4f7: #f3f4f7;
+@dm-color-ff4049: #FF4049;
+@dm-color-f9fafb: #f9fafb;
+@dm-color-3b3b53: #3B3B53;
+
+
+@dm-color-nav: #3477fd;
+@dm-color-bg: @dm-color-f3f4f5;
+@dm-color-border-base: @dm-color-e6e6ed;
+@dm-border-radius-sm: @border-radius-sm;
+@dm-color-main: #3477fd;
+@dm-color-border-blue: #0093fc;
+@dm-color-white: #fff;
+@dm-color-black: #000;
+
+// 淘宝
+@dm-color-tb: #f25519;
+// 天猫
+@dm-color-tm: #ff0030;
+//苏宁
+@dm-color-sn: #e60026;
+//有赞
+@dm-color-yz: #ff0000;
+//微盟
+@dm-color-wm: #1890ff;
+//jd
+@dm-color-jd: #cb0507;
+
+
+@dm-text-font-title: 14px;
+@dm-text-font: 12px; //基础字号
+@dm-base-size: 8px; //基础边距
+
+.textOverflow() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.textOverflowMulti(@line: 3, @bg: #fff) {
+  position: relative;
+  max-height: @line * 1.5em;
+  margin-right: -1em;
+  padding-right: 1em;
+  overflow: hidden;
+  line-height: 1.5em;
+  text-align: justify;
+
+  &::before {
+    position: absolute;
+    right: 14px;
+    bottom: 0;
+    padding: 0 1px;
+    background: @bg;
+    content: '...';
+  }
+
+  &::after {
+    position: absolute;
+    right: 14px;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+    content: '';
+  }
+}
+
+// mixins for clearfix
+// ------------------------
+.clearfix() {
+  zoom: 1;
+
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
+  }
+
+  &::after {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+  }
+}

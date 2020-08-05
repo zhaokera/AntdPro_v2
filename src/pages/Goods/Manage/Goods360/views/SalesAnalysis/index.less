@@ -1,0 +1,96 @@
+@import '~@/utils/utils.less';
+
+.SalesAnalysis {
+  color: @dm-color-3b3b53;
+
+  .header {
+    background-color: #fff;
+    padding: @dm-base-size*2;
+    margin-bottom: @dm-base-size*2;
+  }
+
+  .W120 {
+    width: 120px;
+  }
+
+  .title {
+    // line-height: 60px;
+    line-height: 32px;
+    color: #686B78;
+    padding-left: 25px;
+  }
+
+  .num {
+    font-size: 24px;
+    font-family: 'MicrosoftYaHei';
+    // line-height: 60px;
+  }
+
+  .icon {
+    color: #9495A4;
+    margin-left: 5px;
+  }
+
+  :global {
+    .ant-tabs-nav .ant-tabs-tab {
+      width: 228px;
+      height: 96px;
+      text-align: center;
+      margin: 0 0 16px;
+      background-color: #F9FAFB;
+      border: 1px solid #E6E6ED;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab:not(:last-child) {
+      border-right: none;
+    }
+
+    .ant-tabs-ink-bar {
+      background-color: transparent;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab-active {
+      color: @dm-color-3b3b53;
+      border-top: 2px solid #3477FD;
+      background-color: #fff;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab:hover {
+      color: @dm-color-3b3b53;
+      border-top: 2px solid #3477FD;
+    }
+
+    .ant-tabs-bar {
+      border-bottom: none;
+    }
+
+    .ant-tabs-nav-container-scrolling {
+      height: 98px;
+    }
+  }
+
+  .footer {
+    align-items: stretch;
+  }
+
+  .bgWhite {
+    background-color: #fff;
+    height: 100%;
+    min-height: 300px;
+
+    .LH48 {
+      height: 48px;
+      border-bottom: 1px solid #E6E6ED;
+      padding: 0 @dm-base-size;
+      color: #3B3B53;
+      margin-bottom: @dm-base-size*2;
+    }
+  }
+}
+
+.title {
+  white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}

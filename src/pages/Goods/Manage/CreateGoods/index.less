@@ -1,0 +1,70 @@
+@import '~@/utils/utils.less';
+
+.createBox {
+    background: #fff;
+    .createSteps {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 24px 30px;
+        border-bottom: 1px solid @dm-color-border-base;
+        background: #fff;
+        .tabitem {
+            width: 150px;
+            text-align: center;
+            font-size: 14px
+        }
+        .active {
+            color: @dm-color-3477fb
+        }
+    }
+    .formItem {
+        padding: 24px;
+        padding-bottom: 0;
+        .formItemTit {
+            font-size: 14px;
+            color: @dm-color-3c3b57;
+            font-weight: bold;
+            border-bottom: 1px solid @dm-color-border-base;
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+        :global {
+            .ant-upload-picture-card-wrapper {
+                display: flex
+            }
+        }
+    }
+    .duoguige {
+        :global {
+            .ant-upload.ant-upload-select-picture-card {
+                width: 80px;
+                height: 80px;
+            }
+            .ant-upload-text {
+                font-size: 12px;
+            }
+        }
+    }
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.newUpLoadBox{
+    :global{
+        .ant-upload-list-picture-card{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .ant-upload-list-item-info{
+            height: 86px;
+        }
+       
+    }
+   
+}
