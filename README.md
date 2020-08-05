@@ -15,9 +15,8 @@
 
 ### 使用命令行
 ```bash
-$ git clone ssh://git@39.100.100.247:2222/f2e/dm.full.wx.git
-$ cd dm.full.wx
-$ git checkout dev
+$ git git@github.com:zhaokera/AntdPro_v2.git
+$ cd AntdPro_v2
 $ npm install
 $ npm start         # 访问 http://localhost:8000
 ```
